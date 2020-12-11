@@ -1,0 +1,6 @@
+//Date plus 1 month
+derive type: single value: DATEADD(Dates, 1, month) as: 'Date plus 1 month'
+//First day of next month - 1 day
+derive type: single value: DATEADD(DATE(YEAR({Date plus 1 month}), MONTH({Date plus 1 month}), 1), -1, day) as: 'Last day of the month'
+dateformat col: {Date plus 1 month} type: ddmmcommondate
+drop col: {Date plus 1 month} action: Drop
