@@ -5,7 +5,7 @@ If you need to add a list of properties / values in columns to an existing datas
 
 2. From your dataset, do a cross-join to add the properties columns to all rows
 
-
+Resources:
 
 - [Flow zip file to import in Trifacta or Dataprep](https://github.com/victorcouste/trifacta-flows-examples/raw/main/Add%20a%20list%20of%20properties-values%20as%20columns%20in%20a%20dataset/flow_Add%20a%20list%20of%20propertiesvalues%20as%20columns%20in%20a%20dataset.zip)
 
