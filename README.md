@@ -8,6 +8,7 @@ For each example you will find:
 - Recipes in [Wrangle language](https://docs.trifacta.com/display/DP/Wrangle+Language)
 - A short description of the use case (comments can also be found in recipes)
 
+Datasets used in these examples can be found in [Data folder](https://github.com/victorcouste/trifacta-flows-examples/tree/main/Data)
 Don't hesitate to contact me at vcoustenoble@trifacta.com for any questions.
 
 Happy Wrangling!
