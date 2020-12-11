@@ -6,6 +6,6 @@ Calculate the last day of the month on a given date:
 
 Resources:
 
-- [Flow zip file to import in Trifacta or Dataprep](https://github.com/victorcouste/trifacta-flows-examples/raw/main/Custom%20Calendars/flow_Custom%20Calendars.zip)
+- [Flow zip file to import in Trifacta or Dataprep](https://github.com/victorcouste/trifacta-flows-examples/raw/main/Get%20last%20day%20of%20month%20from%20a%20date/flow_Get%20last%20day%20of%20month%20for%20a%20date.zip)
 
-- [Calendars recipe](https://github.com/victorcouste/trifacta-flows-examples/blob/main/Custom%20Calendars/my_calendars.wrangle)
+- [Last month day recipe](https://github.com/victorcouste/trifacta-flows-examples/blob/main/Get%20last%20day%20of%20month%20from%20a%20date/Last%20month%20day.wrangle)
