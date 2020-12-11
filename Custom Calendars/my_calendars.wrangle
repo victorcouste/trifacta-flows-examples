@@ -1,0 +1,15 @@
+//Generate calendar rows with increment number
+derive type: single value: RANGE(0, $nb_increments, 1) as: 'increments'
+settype col: increments type: Array
+flatten col: increments
+//Add the initial date column
+derive type: single value: DATEFORMAT(DATE($intial_year, $initial_month, $initial_day), 'dd-MM-yyyy HH:mm:ss') as: 'Initial date'
+//Generate calendar values based on initial date, increment and a time-unit
+derive type: single value: DATEADD({Initial date}, increments, day) as: 'Days Calendar'
+derive type: single value: DATEADD({Initial date}, increments, month) as: 'Months Calendar'
+derive type: single value: DATEADD({Initial date}, increments, hour) as: 'Hours Calendar'
+derive type: single value: DATEADD({Initial date}, increments, minute) as: 'Minutes Calendar'
+derive type: single value: DATEADD({Initial date}, increments, week) as: 'Weeks Calendar'
+derive type: single value: WEEKNUM({Weeks Calendar}) as: 'Week Number'
+dateformat col: {Days Calendar},{Months Calendar},{Weeks Calendar},{Initial date} type: custom format: 'dd-MM-yyyy'
+drop col: dummy action: Drop
