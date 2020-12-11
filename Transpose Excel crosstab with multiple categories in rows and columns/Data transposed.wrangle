@@ -1,0 +1,16 @@
+splitrows col: column1 on: '\n' quote: '\"' quoteEscapeChar: '\"'
+//Split columns and clean double quote
+split type: on col: column1 on: ',' limit: 13 quote: '\"'
+replacepatterns col: * with: '' on: `"` global: true
+//Rename columns with the 3 first rows
+rename type: header method: multi sourcerownumbers: 1,2,3 separator: '-' filltype: true
+rename type: manual mapping: [column2,'OFFER']
+rename type: manual mapping: [column3,'KPI']
+//Unpivot all columns except OFFER AND KPI
+unpivot col: {ACTUAL-PERIODIC-1/1/2020}~{BUDGET-YTD-3/1/2020} groupEvery: 1
+//Split columns name to get categories
+splitpatterns col: key type: on on: '-' limit: 2
+rename type: manual mapping: [key1,'PHASE']
+rename type: manual mapping: [key2,'PERIOD TYPE']
+rename type: manual mapping: [key3,'PERIOD']
+rename type: manual mapping: [value,'VALUE']
