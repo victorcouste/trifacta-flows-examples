@@ -1,0 +1,11 @@
+//Get day of previous row
+derive type: multiple value: PREV({My Days}, 1) order: $sourcerownumber as: 'Day of previous row'
+//Calculate nb missing days from previous row
+derive type: single value: DATEDIF({Day of previous row}, {My Days}, day) - 1 as: 'Nb missing days from prev row'
+//Create Array with days index to be created
+derive type: single value: RANGE(0, {Nb missing days from prev row} + 1, 1) as: 'Days to be created'
+//With a Flatten on the previous Array, create missing rows with days index to be created
+flatten col: {Days to be created}
+//Create missing days by adding index nb days to last valid day
+derive type: single value: DATEADD({Day of previous row}, {Days to be created}, day) as: 'All days'
+drop col: {Days to be created},{Nb missing days from prev row},{Day of previous row},{My Days} action: Drop
