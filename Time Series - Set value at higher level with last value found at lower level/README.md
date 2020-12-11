@@ -10,6 +10,6 @@ From a Time Series dataset with millisecond granularity, we want to set values a
 
 Resources:
 
-- [Flow zip file to import in Trifacta or Dataprep](https://github.com/victorcouste/trifacta-flows-examples/raw/main/Custom%20Calendars/flow_Custom%20Calendars.zip)
+- [Flow zip file to import in Trifacta or Dataprep](https://github.com/victorcouste/trifacta-flows-examples/raw/main/Time%20Series%20-%20Set%20value%20at%20higher%20level%20with%20last%20value%20found%20at%20lower%20level/flow_Time%20Series%20-%20Set%20value%20at%20higher%20level%20with%20last%20value%20found%20at%20lower%20level.zip)
 
-- [Calendars recipe](https://github.com/victorcouste/trifacta-flows-examples/blob/main/Custom%20Calendars/my_calendars.wrangle)
+- [Recipe](https://github.com/victorcouste/trifacta-flows-examples/blob/main/Time%20Series%20-%20Set%20value%20at%20higher%20level%20with%20last%20value%20found%20at%20lower%20level/Set%20value%20at%20second%20level.wrangle)
