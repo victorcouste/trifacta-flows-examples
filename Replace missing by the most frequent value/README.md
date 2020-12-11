@@ -2,7 +2,9 @@
 For this use case you need to replace missing occupation values but the most frequent occupation found in the dataset.
 
 We will do that in 2 steps:
+
 1. Find the most frequent occupation category and create a column with it
+
 2. Replace missing value by this occupation category found
 
 Resources:
