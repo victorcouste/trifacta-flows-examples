@@ -1,0 +1,11 @@
+Property	Value
+P1	1
+P2	4
+P3	87
+P4	ABC
+P5	9.34
+P6	False
+P7	ZZZ
+P8	Paris
+P9	00000
+P10	the end
