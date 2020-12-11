@@ -10,7 +10,11 @@ For each example you will find:
 
 Don't hesitate to contact me at vcoustenoble@trifacta.com for any questions.
 
-Happy Wrangling!  ([start free](https://www.trifacta.com/start-wrangling/))
+Happy Wrangling!
+
+[Start Free](https://www.trifacta.com/start-wrangling/)
+
+[Getting Start video](https://www.youtube.com/watch?v=qGGXqA7YKtI)
 
 
 ![Trifacta logo](trifacta.png)
