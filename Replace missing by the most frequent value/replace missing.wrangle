@@ -1,8 +1,8 @@
 //Calculate frequencies of occupation not null
-// derive type: multiple value: COUNTIF(!ISMISSING([OCCUPATION])) group: OCCUPATION as: 'Occupation frequency'
+derive type: multiple value: COUNTIF(!ISMISSING([OCCUPATION])) group: OCCUPATION as: 'Occupation frequency'
 //Get the occupation with the max frequency
-// derive type: single value: IF({Occupation frequency} == MAX({Occupation frequency}), OCCUPATION, '') as: 'Most frequent occupation'
-// set col: {Most frequent occupation} value: ANYIF($col, !ISMISSING([$col]))
+derive type: single value: IF({Occupation frequency} == MAX({Occupation frequency}), OCCUPATION, '') as: 'Most frequent occupation'
+set col: {Most frequent occupation} value: ANYIF($col, !ISMISSING([$col]))
 //Replace missing occupation with the most frequent occupation
-// set col: OCCUPATION value: IFMISSING($col, {Most frequent occupation})
-// drop col: {Occupation frequency},{Most frequent occupation} action: Drop
+set col: OCCUPATION value: IFMISSING($col, {Most frequent occupation})
+drop col: {Occupation frequency},{Most frequent occupation} action: Drop
