@@ -1,0 +1,4 @@
+header
+textformat col: brands type: uppercase
+//Group by to create a list of brands
+groupby value: LIST(brands, 100) type: agg

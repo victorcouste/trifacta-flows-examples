@@ -1,0 +1,13 @@
+textformat col: name,site type: uppercase
+//Extract list of words from name and site columns
+extractlist col: name on: `{alpha}+` as: 'extractlist_name'
+extractlist col: site on: `{alpha}+` as: 'extractlist_site'
+//WIth a cross-join, add a new column with list of words to look for
+join with: categories list col: name = current_dataset.name, extractlist_name = current_dataset.extractlist_name, site = current_dataset.site, extractlist_site = current_dataset.extractlist_site, type = current_dataset.type, list_brands = categories list.list_brands type: inner
+//Get common words found in 2 list
+derive type: single value: ARRAYINTERSECT([list_brands,extractlist_name]) as: 'Brands in Name'
+derive type: single value: ARRAYINTERSECT([list_brands,extractlist_site]) as: 'Brands in Site'
+//Cindition on 1 column and if 1 of the 2 common lists is not empty (some words have been found).
+derive type: single value: IF(type == 'Auto repair shop' && (ARRAYLEN({Brands in Name}) || ARRAYLEN({Brands in Site})), 'authorized car dealer', '') as: 'authorized car dealer'
+//Filter on row matching conditions
+filter type: custom rowType: single row: {authorized car dealer} == 'authorized car dealer' action: Keep
