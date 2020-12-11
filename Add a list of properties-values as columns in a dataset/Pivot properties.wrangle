@@ -1,0 +1,3 @@
+header
+pivot col: Property value: ANY(Value) limit: 50
+rename type: findAndReplace col: * on: 'any_Value_' with: ''
