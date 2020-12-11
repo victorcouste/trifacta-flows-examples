@@ -9,6 +9,6 @@ Easy to do that in Trifacta with multiple steps:
 
 Resources:
 
-- [Flow zip file to import in Trifacta or Dataprep](https://github.com/victorcouste/trifacta-flows-examples/raw/main/Custom%20Calendars/flow_Custom%20Calendars.zip)
+- [Flow zip file to import in Trifacta or Dataprep](https://github.com/victorcouste/trifacta-flows-examples/raw/main/Transpose%20Excel%20crosstab%20with%20multiple%20categories%20in%20rows%20and%20columns/flow_Transpose%20Excel%20crosstab%20with%20multiple%20categories%20in%20rows%20and%20columns.zip)
 
-- [Calendars recipe](https://github.com/victorcouste/trifacta-flows-examples/blob/main/Custom%20Calendars/my_calendars.wrangle)
+- [Data Transposed recipe](https://github.com/victorcouste/trifacta-flows-examples/blob/main/Transpose%20Excel%20crosstab%20with%20multiple%20categories%20in%20rows%20and%20columns/Data%20transposed.wrangle)
