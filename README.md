@@ -1,6 +1,6 @@
 # Trifacta Flows Examples
 
-Here you will find examples and use cases of Trifacta Flows to clean, transform and manipulate your data.
+Here you will find examples and use cases of Trifacta [Flows](https://docs.trifacta.com/display/DP/Object+Overview#ObjectOverview-Flow) to clean, transform and manipulate your data.
 These flows can be used with Trifacta Enterprise (deployed on-premise in Azure or in AWS), Trifacta SaaS or Google Cloud Dataprep.
 
 For each example you will find:
