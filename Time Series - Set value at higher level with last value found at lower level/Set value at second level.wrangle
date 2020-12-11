@@ -1,0 +1,10 @@
+//Format time to get time at millisecond and second levels
+derive type: single value: UNIXTIMEFORMAT(Timestamp, 'yyyy-MM-dd HH:mm:ss:SSS') as: 'Initial Time (millisecond)'
+derive type: single value: UNIXTIMEFORMAT(Timestamp, 'yyyy-MM-dd HH:mm:ss') as: 'Truncated Time (second)'
+//Get list of values within the second level
+derive type: multiple value: LISTIF(Measure, 100, Measure > 0) group: {Truncated Time (second)} as: 'List Measure in same second'
+//Get last value found in the second
+unnest col: {List Measure in same second} keys: '[-1]' pluck: false markLineage: false
+//Group by second
+groupby group: {Truncated Time (second)} value: ANY({-1}) type: agg
+rename type: manual mapping: [{any_-1},'Last value found at millisecond level']
