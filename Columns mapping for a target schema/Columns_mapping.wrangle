@@ -1,0 +1,5 @@
+header
+//New column with row number added to the target schema column name
+derive type: multiple value: ROWNUMBER() order: $sourcerownumber as: 'column1'
+merge col: column1,{Target Schema} with: ' -- ' as: 'Target Schema with order'
+drop col: column1,{Target Schema} action: Drop

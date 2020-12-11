@@ -1,0 +1,12 @@
+//New column with row number to keep a unique ID of each row
+derive type: multiple value: ROWNUMBER() order: $sourcerownumber as: 'row number'
+//Unpivot on all columns except row number => 1 column with columns names, 1 column with columns values
+unpivot col: IMSI~OCCUPATION groupEvery: 1
+rename type: manual mapping: [key,'column']
+//Join with Column mapping recipe to map input columns and target schema columns
+join with: Columns_mapping col: column = current_dataset.column,{row number} = current_dataset.{row number},value = current_dataset.value,{Target Schema with order} = Columns_mapping.{Target Schema with order} row: current_dataset.column == Columns_mapping.{Input Column} type: right
+//Pivot to put back data in the right structure and schema, keeping order of target columns
+pivot col: {Target Schema with order} group: {row number} value: ANY(value) limit: 50
+//Remove the row number columns and rename all pivoted columns with the target name
+drop col: {row number} action: Drop
+rename type: findAndReplace col: * on: `any_value_{digit}+ -- ` with: ''
