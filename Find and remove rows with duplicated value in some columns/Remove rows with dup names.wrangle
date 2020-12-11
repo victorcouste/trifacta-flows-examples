@@ -1,5 +1,5 @@
 //Identify rows where last and first name are equals
-// derive type: multiple value: COUNT() group: FIRST_NAME,LAST_NAME as: 'First and last name duplicated'
+derive type: multiple value: COUNT() group: FIRST_NAME,LAST_NAME as: 'First and last name duplicated'
 //Identify which rows to keep, based on file row number (we will keep the first row)
-// derive type: multiple value: ROWNUMBER() group: FIRST_NAME,LAST_NAME order: $sourcerownumber as: 'First and last name duplicated to delete'
-// filter type: custom rowType: single row: {First and last name duplicated to delete} == 1 action: Keep
+derive type: multiple value: ROWNUMBER() group: FIRST_NAME,LAST_NAME order: $sourcerownumber as: 'First and last name duplicated to delete'
+filter type: custom rowType: single row: {First and last name duplicated to delete} == 1 action: Keep
