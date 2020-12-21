@@ -7,7 +7,7 @@ Assets for demonstration of the blog post **"Setting Up Data Quality Monitoring 
 
 - **[flow_Profiling  Quality Rules Processing.zip](https://github.com/victorcouste/trifacta-flows-examples/blob/main/Profiling%20%20Quality%20Rules%20Processing/flow_Profiling%20%20Quality%20Rules%20Processing.zip)** : The DQ Dataprep Flow that extracts the Profiling and Data Quality results and loads them into BigQuery tables.
 
-- **[flow_Data%20Quality_Clickstream_and_Sales.zip](https://github.com/victorcouste/trifacta-flows-examples/blob/main/Profiling%20%20Quality%20Rules%20Processing/flow_Data%20Quality_Clickstream_and_Sales.zip)** : The Sales DWH Dataprep Flow example used in this blog. If you wish, you can use your own Cloud Dataprep flow for which you want to monitor the Data Quality for.
+- **[flow_Data Quality_Clickstream_and_Sales.zip](https://github.com/victorcouste/trifacta-flows-examples/blob/main/Profiling%20%20Quality%20Rules%20Processing/flow_Data%20Quality_Clickstream_and_Sales.zip)** : The Sales DWH Dataprep Flow example used in this blog. If you wish, you can use your own Cloud Dataprep flow for which you want to monitor the Data Quality for.
 
 - **[Sales_Data_small.csv](https://github.com/victorcouste/trifacta-flows-examples/blob/main/Profiling%20%20Quality%20Rules%20Processing/Sales_Data_small.csv)** : Sales CSV file used as one of inputs of the DW flow example.
 
