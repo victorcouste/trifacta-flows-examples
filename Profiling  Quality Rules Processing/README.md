@@ -3,7 +3,7 @@
 
 ![image](Dataprep_DataQuality_in_DataStudio.png)
 
-Assets for demonstration of the blog post **"Setting Up Data Quality Monitoring For Cloud Dataprep Pipelines"(https://www.trifacta.com/blog/xxxxxxxx/)**
+Assets for demonstration of the blog post **"Setting Up Data Quality Monitoring For Cloud Dataprep Pipelines"(https://www.trifacta.com/blog/data-quality-monitoring-for-cloud-dataprep-pipelines/)**
 
 - **[flow_Profiling  Quality Rules Processing.zip](https://github.com/victorcouste/trifacta-flows-examples/blob/main/Profiling%20%20Quality%20Rules%20Processing/flow_Profiling%20%20Quality%20Rules%20Processing.zip)** : The DQ Dataprep Flow that extracts the Profiling and Data Quality results and loads them into BigQuery tables.
 
