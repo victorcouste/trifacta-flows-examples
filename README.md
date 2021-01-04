@@ -36,4 +36,4 @@ Happy Wrangling!
 
 ![Trifacta logo](trifacta.png)
 
-<img src="https://github.com/victorcouste/trifacta-flows-examples/blob/main/CloudDataprep.png" width="15%" height="15%">
+<img src="https://github.com/victorcouste/trifacta-flows-examples/raw/main/CloudDataprep.png" width="15%" height="15%">
