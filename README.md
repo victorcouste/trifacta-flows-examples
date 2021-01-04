@@ -24,7 +24,7 @@ For each example you will find:
 Datasets used in these examples can be found in [Data folder](https://github.com/victorcouste/trifacta-flows-examples/tree/main/Data).
 
 
-Don't hesitate to contact me at vcoustenoble@trifacta.com for any questions.
+Don't hesitate to contact me at [vcoustenoble@trifacta.com](email:vcoustenoble@trifacta.com) for any questions.
 
 
 Happy Wrangling!
